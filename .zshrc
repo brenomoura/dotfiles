@@ -71,9 +71,9 @@ ZSH_THEME="minimal_improved"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+# plugins and keybindings
 source $ZSH/oh-my-zsh.sh
 source ~/zsh/plugins/oh-my-zsh/lib/history.zsh
-source ~/zsh/plugins/oh-my-zsh/lib/key-bindings.zsh
 source ~/zsh/plugins/oh-my-zsh/lib/completion.zsh
 source ~/zsh/plugins/vi-mode.plugin.zsh
 source ~/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -100,26 +100,21 @@ chpwd() ls
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# aliases
 alias gs="git status"
 alias ondemand="cd /home/breno/Documents/BCloud-Dev"
 alias onsite="cd /home/breno/Documents/bcloud-onsite-dev"
 alias api="cd /home/breno/Documents/Projeto-API"
 alias fakelogger="cd /home/breno/Documents/fakelogger"
+alias update='sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove'
 
+
+# Python
 . /home/breno/.local/bin/virtualenvwrapper_lazy.sh
-
 export PATH="/home/breno/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+
 
 export TERM=xterm-256color
