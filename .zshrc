@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/breno/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -85,14 +85,14 @@ chpwd() ls
 
 # aliases
 alias CD="cd"
-alias docs="cd /home/breno/Documents"
+alias docs="cd $HOME/Documents"
 alias gs="git status"
 alias update='sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove'
 alias files='xdg-open'
 
 
 # Python
-export PATH="/home/breno/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
