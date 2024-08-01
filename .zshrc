@@ -121,5 +121,5 @@ GO111MODULE=on
 GOPROXY=https://proxy.golang.org,direct
 
 #ASDF
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+#. $HOME/.asdf/asdf.sh
+#. $HOME/.asdf/completions/asdf.bash
